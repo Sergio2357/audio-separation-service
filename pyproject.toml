@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "audio-separation-service"
+version = "0.1.0"
+description = "This is a practice example to deploy a ml-model with fast api and docker"
+authors = ["Sergio Cadena <sergio@bearing.ai>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.6"
+uvicorn = {extras = ["standard"], version = "^0.34.0"}
+llvmlite = ">=0.39.0"
+librosa = "^0.10.2.post1"
+pydub = "^0.25.1"
+numpy = "<2"
+demucs = "^4.0.1"
+torch =  "2.1.0"
+python-multipart = "^0.0.20"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
